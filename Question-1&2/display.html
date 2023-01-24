@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    
+    <h3>Retrieve the list of students and their center names</h3>
+    <form action="" onsubmit="false">
+      <select onchange="loadStudents(this.value)" style="width: 250px;">
+        <option value="">-- SELECT CENTER ---</option>
+        <option value="1">Lagos</option>
+        <option value="2">Abuja</option>
+        <option value="3">Kano</option>
+        <option value="4">Enugu</option>
+      </select>
+    </form>
+    <hr>
+
+    <table id="display-center" border="1" width="400"></table>
+
+    <br><br />
+
+    <h3>Retrieve list of students and subjects to offer based on their respective categories</h3>
+    <form action="" onsubmit="false">
+      <select onchange="loadStudentByCat(this.value)" style="width: 250px;">
+        <option value="">-- SELECT CATEGORY ---</option>
+        <option value="1">Science</option>
+        <option value="2">Art</option>
+        <option value="3">Commercial</option>
+      </select>
+    </form>
+    <hr>
+
+    <table id="showdata-category" border="1" width="400"></table>
+
+    
+    <br><br />
+
+    <h3>
+      Retrieve the numbers of students offering Science, Commercial and Art subjects respectively via
+      a drop down selection
+    </h3>
+    <form action="" onsubmit="false">
+      <select onchange="loadStudentByCount(this.value)" style="width: 250px;">
+        <option value="">-- SELECT CATEGORY ---</option>
+        <option value="1">Science</option>
+        <option value="2">Art</option>
+        <option value="3">Commercial</option>
+      </select>
+    </form>
+    <hr>
+
+    <table id="showstud-count" border="1" width="400"></table>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
